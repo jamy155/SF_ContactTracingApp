@@ -24,7 +24,6 @@ public with sharing class CTPersonController {
     public static List<Person__c> searchPeople(String searchTerm){
         searchTerm = searchTerm + '%';
 
-       
        return [ SELECT Id, Name, Health_Status__c, Mobile__c, Token__c 
                 FROM Person__c 
                 WHERE Name LIKE :searchTerm 
