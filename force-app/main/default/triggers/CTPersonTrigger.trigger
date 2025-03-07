@@ -8,6 +8,8 @@ trigger CTPersonTrigger on Person__c (before insert, after insert , before updat
             CTPersonTriggerHandler.beforeInsert(Trigger.new);
         }
         when BEFORE_UPDATE {
+             // checks if the health status of a person was changed 
+              // changes the update date to today 
             CTPersonTriggerHandler.beforeUpdate(trigger.new, trigger.oldMap);
             
         }
