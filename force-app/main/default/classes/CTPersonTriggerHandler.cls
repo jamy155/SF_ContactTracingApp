@@ -67,12 +67,13 @@ public with sharing class CTPersonTriggerHandler {
         List<Location_Tracing__c> locationTraces = CTLocationTracingController.getLocationByLocationIds(statusChange);
 
         if (!locationTraces.isEmpty() && locationTraces != null ) {
-            
+
             Set<Id> locationIds = new Set<Id>();
             for (Location_Tracing__c trace : locationTraces) {
                 locationIds.add(trace.Location__c);
                 
             }
+            CTLocationController.updateRedScore(locationIds);
             
         }
 
