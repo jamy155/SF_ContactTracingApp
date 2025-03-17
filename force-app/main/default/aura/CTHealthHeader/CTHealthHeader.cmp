@@ -1,4 +1,8 @@
 <aura:component>
+
+    <aura:attribute name="headerTitle" type="String" default="Person View" />
+    <aura:attribute name="scope" type="String" default="person" />
+
     <div class="slds-page-header slds-page-header_record-home">
         <div class="slds-page-header__row">
             <div class="slds-page-header__col-title">
@@ -15,8 +19,7 @@
                                 <h1>
                                     <span>Contact Tracing</span>
                                     <span class="slds-page-header__title slds-truncate"
-                                        title="Acme - 1,200 Widgets">Person
-                                        View</span>
+                                        title="{!v.headerTitle}">{!v.headerTitle}</span>
                                 </h1>
                             </div>
                         </div>
@@ -31,7 +34,8 @@
                     <div class="slds-page-header__control">
                         <ul class="slds-button-group-list">
                             <li>
-                                <button class="slds-button slds-button_neutral">Add New</button>
+                                <button class="slds-button slds-button_neutral" onclick="{!c.createRecord}">Add
+                                    New</button>
                             </li>
                         </ul>
                     </div>
