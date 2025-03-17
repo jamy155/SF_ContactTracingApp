@@ -42,20 +42,20 @@
             <div class="slds-page-header__col-details">
                 <ul class="slds-page-header__detail-row">
                     <li class="slds-page-header__detail-block">
-                        <div class="" title="Green"> Green </div>
-                        <div class="" title=""> 23 </div>
+                        <div class="header-item green" title="Green"> Green </div>
+                        <div class="header-item green" title=""> 23 </div>
                     </li>
                     <li class="slds-page-header__detail-block">
-                        <div class="" title="Yellow"> Yellow </div>
-                        <div class="" title=""> 23 </div>
+                        <div class="header-item yellow" title="Yellow"> Yellow </div>
+                        <div class="header-item yellow" title=""> 23 </div>
                     </li>
                     <li class="slds-page-header__detail-block">
-                        <div class="" title="Orange"> Orange </div>
-                        <div class="" title=""> 23 </div>
+                        <div class="header-item orange" title="Orange"> Orange </div>
+                        <div class="header-item orange" title=""> 23 </div>
                     </li>
                     <li class="slds-page-header__detail-block">
-                        <div class="" title="Red"> Red </div>
-                        <div class="" title=""> 23 </div>
+                        <div class="header-item red" title="Red"> Red </div>
+                        <div class="header-item red" title=""> 23 </div>
                     </li>
                 </ul>
             </div>

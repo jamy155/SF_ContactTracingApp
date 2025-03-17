@@ -1,2 +1,22 @@
 .THIS {
 }
+
+.THIS .header-item {
+  font-size: small;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.THIS .green {
+  color: green;
+}
+.THIS .yellow {
+  color: rgba(255, 255, 0, 0.849);
+}
+.THIS .orange {
+  color: orangered;
+}
+.THIS .red {
+  color: red;
+}
