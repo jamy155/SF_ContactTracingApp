@@ -5,7 +5,7 @@
     <div class="container">
         <lightning:layout multipleRows="true">
             <lightning:layoutitem size="12">
-                <c:CTHealthHeader headerTitle="{!v.headerTitle}" scope="{!v.scope}" />
+                <c:CTHealthHeader headerTitle="{!v.headerTitle}" scope="{!v.scope}" aura:id="health-header" />
             </lightning:layoutitem>
             <lightning:layoutitem size="12">
                 <lightning:tabset onselect="{!c.tabSelectHander}" variant="vertical">
