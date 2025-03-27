@@ -17,6 +17,7 @@
                     isLoading="{!v.issearching}" type="search" placeholder="Search Here" />
             </div>
         </aura:set>
-        <lightning:datatable keyField="id" data="{! v.data }" columns="{! v.columns }" hideCheckboxColumn="true" />
+        <lightning:datatable keyField="id" data="{! v.data }" columns="{! v.columns }" hideCheckboxColumn="true"
+            onrowaction="{! c.handleRowAction }" />
     </lightning:card>
 </aura:component>
