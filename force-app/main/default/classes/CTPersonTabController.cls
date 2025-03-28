@@ -1,6 +1,6 @@
 public with sharing class CTPersonTabController {
     @AuraEnabled
-    public static UserInformation  getPersonDetails(String recordId){
+    public static UserInformation getPersonDetails(String recordId){
 
             UserInformation info = new UserInformation();
             
@@ -49,8 +49,8 @@ public with sharing class CTPersonTabController {
         @AuraEnabled public Date statusUpdateOn;
         @AuraEnabled public String phone;
         @AuraEnabled public String status;
-        @AruaEnabled public List<CloseContacts> contacts;
-         @AruaEnabled public Integer contactsCount = 0;
+        @AuraEnabled public List<CloseContacts> contacts;
+        @AuraEnabled public Integer contactsCount = 0;
 
     }      
 

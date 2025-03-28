@@ -36,14 +36,12 @@ public with sharing class CTPersonController {
     // returns a person  by Id
     public static Person__c getPersonById(String personID){
       
-       List<Person__c> people =  [ SELECT Id, Name, Mobile__c, Health_Status__c, Token__c 
+    List<Person__c> people = [SELECT Id, Name, Health_Status__c, Mobile__c, Status_Update_Date__c, Token__c 
                 FROM Person__c 
-                WHERE Id = :personID] ;
-
-        if(!people.isEmpty() && people != null){
-          return  people[0]; 
+                WHERE Id =:personId];
+        if(people != null && people.size() > 0){
+            return people[0];
         }
-
         return null;
                
     }
