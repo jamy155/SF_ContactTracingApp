@@ -5,5 +5,10 @@ public with sharing class CTDataCleanupSchedule implements Schedulable {
     public void execute(SchedulableContext sc) {
         CTPeopleTracingDataCleanUpBatch peopleTracingBatch = new CTPeopleTracingDataCleanUpBatch();
         Database.executeBatch(peopleTracingBatch, 2000);
+
+
+        CTLocationTracingDataCleanUpBatch locationTracingBatch = new CTLocationTracingDataCleanUpBatch();
+        Database.executeBatch(locationTracingBatch, 2000);
     }
+
 }
