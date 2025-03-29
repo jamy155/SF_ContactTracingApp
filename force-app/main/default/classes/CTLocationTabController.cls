@@ -26,7 +26,7 @@ public with sharing class CTLocationTabController {
                     cc.id = trace.Person__c;
                     cc.status = trace.Person__r.Health_Status__c;
                     cc.token = trace.Person__r.Token__c;
-                    cc.vistDate = trace.Visit_Date__c;
+                    cc.visitDate = trace.Visit_Date__c;
 
                     closeContacts.add(cc);
             }
@@ -51,7 +51,7 @@ public with sharing class CTLocationTabController {
     public class CloseContacts{
         @AuraEnabled public String id;
         @AuraEnabled public String token;
-        @AuraEnabled public Date vistDate;
+        @AuraEnabled public Date visitDate;
         @AuraEnabled public String status;
     }
 }
