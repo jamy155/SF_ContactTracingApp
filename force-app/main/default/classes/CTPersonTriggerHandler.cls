@@ -16,8 +16,11 @@ public with sharing class CTPersonTriggerHandler {
                 // changes the update date to today 
                 person.Status_Update_Date__c = Date.today();
             }
-             
+            if(person.Token__c == null){
+                person.Token__c = CTPersonController.getToken(person.Mobile__c);
+            }
         }
+             
     }
 
     public static void afterUpdate(List<Person__c> newRecords , Map<Id,Person__c> oldRecordsMap ){
