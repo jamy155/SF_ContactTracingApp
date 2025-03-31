@@ -9,8 +9,8 @@
         { label: "Health Status", fieldName: "Health_Status__c", type: "text" },
         {
           label: "Status Update Date",
-          fieldName: " Status_Update_Date__c",
-          type: "Date"
+          fieldName: "Status_Update_Date__c",
+          type: "date"
         },
         {
           label: "View",

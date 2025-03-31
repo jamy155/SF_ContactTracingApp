@@ -13,7 +13,7 @@ public with sharing class CTPersonController {
     public static List<Person__c> getRecentHealthChanges (){
 
         
-       return [ SELECT Id, Name, Mobile__c, Health_Status__c, Token__c 
+       return [ SELECT Id, Name, Mobile__c, Health_Status__c, Token__c , Status_Update_Date__c 
                 FROM Person__c 
                 ORDER BY Status_Update_Date__c DESC NULLS LAST 
                 LIMIT 100] ;
