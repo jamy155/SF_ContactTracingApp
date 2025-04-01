@@ -2,44 +2,94 @@
 
 Sample Contact Tracing app built on Salesforce Platform.
 
-![Contact_Tracing_App](https://github.com/choudharymanish8585/contact-tracing/blob/master/screenshots/screenshots.png)
+![Contact_Tracing_App](https://github.com/jamy155/SF_ContactTracingApp/blob/7c03ff847007d92e4bc1051dc233978990f4825b/screenshots/Screenshots.png)
 
-<b>This application is part of my course "[Salesforce Apex Development](https://www.udemy.com/course/salesforce-development)". Enroll now to get access to detailed explaination.</b>
+<b>This project is part of the Salesforce Apex Development course by Manish Choudhari </b>
 
-The course is designed for all experience levels and covers Apex Development from basics (and I really mean it) with Lightning front-end development. The course is filled with many challenges and real-time projects to help you build that muscle memory and make you a proficient Salesforce Developer. This indeed is
+The Contact Tracing App is a powerful Salesforce-based solution designed to track and manage health statuses, contact interactions, and location visits to help organizations monitor and mitigate health risks effectively.
 
-#### "ONE COURSE TO RULE THEM ALL"
+##### This Project highlight all the following Fundamentals :
 
-##### It's impossible to highlight all offering of this course here, but below are some major modules:
-
-- Web Application Architecture
-- Programming Fundamentals
 - Apex Development
 - Async Apex
+- HTML/CSS
 - Aura Framework Development
 - SOQL - Salesforce Object Query Language
 - SOSL - Salesforce Object Search Language
-- Database Manipulation
 - Object-Oriented Programming System
 
-## Install Object Schema
+## Key Features & Objects:
 
-**Make sure you have "git" and Salesoforce CLI installed in your system. Follow below steps to upload object schema along with permission set in your Salesforce Org.**
+#### Person Object
 
-- Clone "schema-metadata" branch from this git repo `git clone --branch schema-metadata https://github.com/choudharymanish8585/contact-tracing.git`
-- Open Terminal/Command Prompt and navigate to above folder
-- Authorize your Salesforce Org `sfdx force:auth:web:login -a TestOrg1`
-- Deploy all metadata to your Salesforce Org `sfdx force:source:deploy -p force-app/main/default/`
-- Assign permission set to current user `sfdx force:user:permset:assign -n Health_Admin`
-- Open Saleforce Org `sfdx force:org:open` and switch to "Contact Tracing" application
+![Contact_Tracing_App](https://github.com/jamy155/SF_ContactTracingApp/blob/7c03ff847007d92e4bc1051dc233978990f4825b/screenshots/Persons.png)
 
-## Install Entire Application
+- Stores records of all individuals in the system.
 
-**Make sure you have "git" and Salesoforce CLI installed in your system. Follow below steps to upload object schema along with permission set in your Salesforce Org.**
+- Captures personal information along with their health status categorized as:
 
-- Clone "master" branch from this git repo `git clone https://github.com/choudharymanish8585/contact-tracing.git`
-- Open Terminal/Command Prompt and navigate to above folder
-- Authorize your Salesforce Org `sfdx force:auth:web:login -a TestOrg1`
-- Deploy all metadata to your Salesforce Org `sfdx force:source:deploy -p force-app/main/default/`
-- Assign permission set to current user `sfdx force:user:permset:assign -n Health_Admin`
-- Open Saleforce Org `sfdx force:org:open` and switch to "Contact Tracing" application
+- 🟢 Green (Healthy)
+
+- 🟡 Yellow (At Risk)
+
+- 🟠 Orange (Potential Exposure)
+
+- 🔴 Red (Confirmed Case)
+
+#### Loaction Object
+
+![Contact_Tracing_App](https://github.com/jamy155/SF_ContactTracingApp/blob/7c03ff847007d92e4bc1051dc233978990f4825b/screenshots/Loactions.png)
+
+- Maintains records of various locations within the system.
+
+- Each location has a status indicator (Green, Yellow, Orange, Red) to reflect its risk level based on recent visits and exposure data.
+
+#### People Tracing Object
+
+![Contact_Tracing_App](https://github.com/jamy155/SF_ContactTracingApp/blob/7c03ff847007d92e4bc1051dc233978990f4825b/screenshots/Loactions.png)
+
+- Tracks interactions between two individuals.
+
+- Stores details such as:
+
+- Person 1 & Person 2 (who came into contact)
+
+- Contact Type:
+
+- 🏡 Cohabitant (Lives together)
+
+- 🏢 Neighbor (Nearby contact)
+
+- 🔄 Other (General contact)
+
+- Contact Date (Date of interaction)
+
+#### Location Tracing Object
+
+![Contact_Tracing_App](https://github.com/jamy155/SF_ContactTracingApp/blob/7c03ff847007d92e4bc1051dc233978990f4825b/screenshots/Loactions.png)
+
+- Logs location visits made by individuals.
+
+- Tracks:
+
+- Person (Who visited)
+
+- Location (Place visited)
+
+- Visit Date
+
+#### Health Admin View
+
+![Contact_Tracing_App](https://github.com/jamy155/SF_ContactTracingApp/blob/7c03ff847007d92e4bc1051dc233978990f4825b/screenshots/Health%20Admin%20View.png)
+
+- A dedicated dashboard for health administrators to:
+
+- Monitor & update people and location health statuses.
+
+- Review contact tracing records to identify potential exposure chains.
+
+- Take action based on risk assessments.
+
+## Impact
+
+This app enables organizations to efficiently track potential exposure, assess risks, and take proactive measures in managing health and safety within their environment. The Health Admin View serves as a central hub for decision-making, ensuring that the right precautions are taken promptly.
