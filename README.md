@@ -46,7 +46,7 @@ The Contact Tracing App is a powerful Salesforce-based solution designed to trac
 
 #### People Tracing Object
 
-![Contact_Tracing_App](https://github.com/jamy155/SF_ContactTracingApp/blob/7c03ff847007d92e4bc1051dc233978990f4825b/screenshots/Loactions.png)
+![Contact_Tracing_App](https://github.com/jamy155/SF_ContactTracingApp/blob/5ef00570834ca931402ec0141bbc481e4013511f/screenshots/People%20Tracing%20.png))
 
 - Tracks interactions between two individuals.
 
@@ -66,7 +66,7 @@ The Contact Tracing App is a powerful Salesforce-based solution designed to trac
 
 #### Location Tracing Object
 
-![Contact_Tracing_App](https://github.com/jamy155/SF_ContactTracingApp/blob/7c03ff847007d92e4bc1051dc233978990f4825b/screenshots/Loactions.png)
+![Contact_Tracing_App](https://github.com/jamy155/SF_ContactTracingApp/blob/5ef00570834ca931402ec0141bbc481e4013511f/screenshots/Location%20tracing.png))
 
 - Logs location visits made by individuals.
 
